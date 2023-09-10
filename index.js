@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
 
 }) 
 
+app.get('/about', (req, res) => {
+    res.render('about')
+ 
+ }) 
 app.listen(PORT, () => {
     console.log("Сервер запущен.\n" + `http://localhost:${PORT}`)
 })
